@@ -1,0 +1,244 @@
+// iniciamos google analitycs
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+jQuery(document).ready(function() {
+	
+	// función para poner cookie
+	function setCookie(cname, cvalue, exdays) {
+		const d = new Date();
+		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+		let expires = "expires="+d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+	
+	// función para coger la cookie
+	function getCookie(cname) {
+		let name = cname + "=";
+		let ca = document.cookie.split(';');
+		for(let i = 0; i < ca.length; i++) {
+			let c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+
+	// función para comprobar la cookie
+	function checkCookie() {
+		console.log("dentro check");
+		
+		// cogemos las variables de gtm_tag para poner el id
+		var gtm_tag = cookies_options.gtm_tag;
+		
+		let user = getCookie("acepta_cookie");
+		if (user == "" || user == 00) {
+			// Si está vacío o no ha rechazado todas, ponemos consentimiento denied
+			gtag('consent', 'default', {
+				'ad_storage': 'denied',
+				'analytics_storage': 'denied'
+			});
+
+			// enviamos los datos
+			gtag('js', new Date());
+
+			gtag('config', gtm_tag);
+			
+			if (user == "") {
+				console.log("cookies iniciadas");
+				jQuery(".banner_consentimiento").css("display","block");
+			}else if(user == 00) {
+				console.log("cookies rechazadas");
+				jQuery(".btn_configurar").css("display","block");
+			}
+		
+		}else if(user == 01){
+			// Si acepta solo analitica, ponemos consentimiento granted en analytics_storage
+			gtag('consent', 'default', {
+				'ad_storage': 'denied',
+				'analytics_storage': 'granted'
+			});
+
+			// enviamos los datos
+			gtag('js', new Date());
+
+			gtag('config', gtm_tag);
+			
+			jQuery(".btn_configurar").css("display","block");
+			
+			console.log("cookies analitica aceptadas");
+		}else if(user == 10){
+			// Si acepta solo marketing, ponemos consentimiento granted en ad_storage
+			gtag('consent', 'default', {
+				'ad_storage': 'granted',
+				'analytics_storage': 'denied'
+			});
+
+			// enviamos los datos
+			gtag('js', new Date());
+
+			gtag('config', gtm_tag);
+			
+			jQuery(".btn_configurar").css("display","block");
+			
+			console.log("cookies marketing aceptadas");
+		}else if(user == 11){
+			// Si acepta, ponemos consentimiento granted
+			gtag('consent', 'default', {
+				'ad_storage': 'granted',
+				'analytics_storage': 'granted'
+			});
+
+			// enviamos los datos
+			gtag('js', new Date());
+
+			gtag('config', gtm_tag);
+			
+			jQuery(".btn_configurar").css("display","block");
+			
+			console.log("cookies aceptadas");
+		}
+	}
+	
+	jQuery(".banner_consentimiento button.aceptar").on( "click", function(){
+		// si acepta, actualizamos consentimiento y guardamos la cookie
+		gtag('consent', 'update', {
+			'ad_storage': 'granted',
+			'analytics_storage': 'granted'
+		});
+		
+		// cogemos las variables de analitica y marketong para saber cuáles están activar y guardar según lo sean
+		var cookies_analitycs = cookies_options.analitycs;
+		var cookies_marketing = cookies_options.marketing;
+		
+		if(cookies_analitycs == "on" && cookies_marketing == "on"){
+			var valor = 11;
+		}else if(cookies_analitycs == "on"){
+			var valor = 01;
+		}else if(cookies_marketing == "on"){
+			var valor = 10;
+		}else{
+			var valor = 00;
+		}
+		
+		setCookie("acepta_cookie", valor, 365);
+		jQuery(".banner_consentimiento").css("display","none");
+		jQuery(".btn_configurar").css("display","block");
+		console.log("acepto las cookies");
+	});
+	
+	jQuery(".banner_consentimiento button.rechazar").on( "click", function(){
+		// si no acepta, actualizamos consentimiento y guardamos la cookie
+		setCookie("acepta_cookie", 00, 1);
+		jQuery(".banner_consentimiento").css("display","none");
+		jQuery(".btn_configurar").css("display","block");
+		console.log("rechazo las cookies");
+	});
+	
+	jQuery(".banner_consentimiento button.configurar").on( "click", function(){
+		// abrimos menú completo
+		jQuery(".configurar_cookies").css("display","block");
+	});
+	
+	jQuery(".configurar_cookies button.guardar").on( "click", function(){
+		// Borramos primero las cookies
+		var cookies = document.cookie.split(";");
+		
+		// cogemos las variables de gtm_tag para poner el id
+		var gtm_tag = cookies_options.gtm_tag;
+
+		for (var i = 0; i < cookies.length; i++) {
+			var cookie = cookies[i];
+			var eqPos = cookie.indexOf("=");
+			var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+			document.cookie = name + '=; Path=/; Domain=.'+window.location.hostname+'; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+		}
+		
+		//console.log(cookies);
+		
+		// si configura las cookies, comprobamos que ha aceptado
+		var analitica = jQuery('#ad_storage').is(':checked');
+		var marketing = jQuery('#analytics_storage').is(':checked');
+		
+		console.log(analitica);
+		console.log(marketing);
+		
+		if(analitica == false && marketing == false){
+			// Si ha rechazado todas, ponemos consentimiento denied
+			gtag('consent', 'default', {
+				'ad_storage': 'denied',
+				'analytics_storage': 'denied'
+			});
+			
+			setCookie("acepta_cookie", 00, 1);
+			jQuery(".banner_consentimiento").css("display","none");
+			console.log("rechazo las cookies");
+		}else if(analitica == true && marketing == false){
+			// Si acepta solo analitica, ponemos consentimiento granted en analytics_storage
+			gtag('consent', 'default', {
+				'ad_storage': 'denied',
+				'analytics_storage': 'granted'
+			});
+			
+			setCookie("acepta_cookie", 01, 365);
+			jQuery(".banner_consentimiento").css("display","none");
+			console.log("acepto analitica");
+		}else if(analitica == false && marketing == true){
+			// Si acepta solo marketing, ponemos consentimiento granted en ad_storage
+			gtag('consent', 'default', {
+				'ad_storage': 'granted',
+				'analytics_storage': 'denied'
+			});
+			
+			setCookie("acepta_cookie", 10, 365);
+			jQuery(".banner_consentimiento").css("display","none");
+			console.log("acepto marketing");
+		}else if(analitica == true && marketing == true){
+			// si acepta, actualizamos consentimiento y guardamos la cookie
+			gtag('consent', 'update', {
+				'ad_storage': 'granted',
+				'analytics_storage': 'granted'
+			});
+			setCookie("acepta_cookie", 11, 365);
+			jQuery(".banner_consentimiento").css("display","none");
+			console.log("acepto todas cookies");
+		}
+		
+		jQuery(".configurar_cookies").css("display","none");
+		jQuery(".btn_configurar").css("display","block");
+
+		// enviamos los datos
+		gtag('js', new Date());
+
+		gtag('config', gtm_tag);
+		
+	});
+	
+	jQuery(".configurar_cookies .cont_config .cerrar_config").on( "click", function(){
+		jQuery(".configurar_cookies").css("display","none");
+	});
+	
+	jQuery(".btn_configurar span").on( "click", function(){
+		// mostrar configuración cookies
+		let user = getCookie("acepta_cookie");
+		
+		if(user == 01){
+			jQuery("#ad_storage").prop('checked', true);
+		}else if(user == 10){
+			jQuery("#analytics_storage").prop('checked', true);
+		}else if(user == 11){
+			jQuery("#ad_storage").prop('checked', true);
+			jQuery("#analytics_storage").prop('checked', true);
+		}
+		
+		jQuery(".configurar_cookies").css("display","block");
+	});
+	
+	// Chequeamos la cookie
+	checkCookie();
+	
+});

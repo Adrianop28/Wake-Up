@@ -1,0 +1,179 @@
+(function ($, root, undefined) {
+  $(function () {
+    "use strict";
+
+    $(document).on("click", 'a[href^="#"]', function (event) {
+      event.preventDefault();
+
+      $("html, body").animate(
+        {
+          scrollTop: $($.attr(this, "href")).offset().top,
+        },
+        500
+      );
+    });
+
+    var altoventana = $(window).height();
+
+    $(window).scroll(function () {
+      //if (($( window ).scrollTop()) > ($( '#features-3' ).offset().top - 300) && lanzado == 0){ testTypingEffect(); lanzado = 1; }
+      // $('.logo img').css('opacity',(0 + ($( window ).scrollTop()-((altoventana/2)-140)))/100);
+    });
+  });
+})(jQuery, this);
+
+jQuery(window).load(function () {
+  // Coger la altura del menu para hacer la animación
+  var alturamenusup = jQuery(".menusuperior").outerHeight();
+  var alturamenucompleto = jQuery(".menuprin.header").outerHeight();
+  jQuery("body")
+    .get(0)
+    .style.setProperty("--alturamenusup", alturamenusup + "px");
+  jQuery("body")
+    .get(0)
+    .style.setProperty("--alturamenucompleto", alturamenucompleto + "px");
+
+  // Coger el ancho de la pantalla
+  var anchopantalla = jQuery("body").width();
+  jQuery("body")
+    .get(0)
+    .style.setProperty("--anchopantalla", anchopantalla + "px");
+});
+
+jQuery(window).resize(function () {
+  // Coger la altura del menu para hacer la animación
+  var alturamenusup = jQuery(".menusuperior").outerHeight();
+  var alturamenucompleto = jQuery(".menuprin.header").outerHeight();
+  jQuery("body")
+    .get(0)
+    .style.setProperty("--alturamenusup", alturamenusup + "px");
+  jQuery("body")
+    .get(0)
+    .style.setProperty("--alturamenucompleto", alturamenucompleto + "px");
+
+  // Coger el ancho de la pantalla
+  var anchopantalla = jQuery("body").width();
+  jQuery("body")
+    .get(0)
+    .style.setProperty("--anchopantalla", anchopantalla + "px");
+});
+
+// script menú
+jQuery(document).ready(function () {
+  // Zoom preguntas frecuentes
+
+  jQuery("body").on("click", ".b12front", function () {
+    jQuery("body").prepend(
+      "<div class='cerrar_zoom'>X</div><div id='fondo_negro' class='fondo_negro'><div class='contendor_zoom'><img src='https://chicklesgum.com/deliplus/wp-content/uploads/2024/03/B12-FR-full.png' /></div></div>"
+    );
+    jQuery(".contendor_zoom").zoom({ on: "click" });
+  });
+
+  jQuery("body").on("click", ".b12back", function () {
+    jQuery("body").prepend(
+      "<div class='cerrar_zoom'>X</div><div id='fondo_negro' class='fondo_negro'><div class='contendor_zoom'><img src='https://chicklesgum.com/deliplus/wp-content/uploads/2024/03/B12-TR-full.png' /></div></div>"
+    );
+    jQuery(".contendor_zoom").zoom({ on: "click" });
+  });
+
+  jQuery("body").on("click", ".energyfront", function () {
+    jQuery("body").prepend(
+      "<div class='cerrar_zoom'>X</div><div id='fondo_negro' class='fondo_negro'><div class='contendor_zoom'><img src='https://chicklesgum.com/deliplus/wp-content/uploads/2024/03/ENERGY-FR-full.png' /></div></div>"
+    );
+    jQuery(".contendor_zoom").zoom({ on: "click" });
+  });
+
+  jQuery("body").on("click", ".energyback", function () {
+    jQuery("body").prepend(
+      "<div class='cerrar_zoom'>X</div><div id='fondo_negro' class='fondo_negro'><div class='contendor_zoom'><img src='https://chicklesgum.com/deliplus/wp-content/uploads/2024/03/ENERGY-TR-full.png' /></div></div>"
+    );
+    jQuery(".contendor_zoom").zoom({ on: "click" });
+  });
+
+  /* jQuery("body").on("click", ".fondo_negro img", function () {
+    jQuery(this).toggleClass("activo");
+  }); */
+
+  jQuery("body").on("click", ".cerrar_zoom", function () {
+    jQuery(".cerrar_zoom").remove();
+    jQuery(".fondo_negro").remove();
+  });
+
+  // Check the platform and add class to body
+  var platform = navigator.platform.toLowerCase();
+
+  if (platform.includes("win")) {
+    jQuery("body").addClass("win");
+  }
+
+  jQuery("body").on("click", ".hamburger", function () {
+    jQuery(this).addClass("is-active");
+    jQuery(".nav").addClass("abierto");
+    jQuery(".nav").css({ "-webkit-animation-name": "mostrar" });
+  });
+
+  jQuery("body").on("click", ".hamburger.is-active", function () {
+    jQuery(this).removeClass("is-active");
+    jQuery(".nav").removeClass("abierto");
+    jQuery(".nav").css({ "-webkit-animation-name": "ocultar" });
+  });
+
+  jQuery("body").on("click", ".btnleer", function () {
+    caja = jQuery(this).attr("data-caja");
+
+    jQuery(".cajatextoinfo.caja" + caja).fadeIn("slow");
+  });
+
+  jQuery("body").on("click", ".cajatextoinfo div", function () {
+    caja = jQuery(this).attr("data-caja");
+
+    jQuery(".cajatextoinfo.caja" + caja).fadeOut("slow");
+  });
+
+  if (jQuery(window).scrollTop() > jQuery("body").offset().top) {
+    // cuando hace scroll
+    jQuery(".menuprin.header").addClass("colormenu");
+  } else {
+    // cuando esta arriba
+    jQuery(".menuprin.header").removeClass("colormenu");
+  }
+
+  jQuery(window).scroll(function () {
+    if (jQuery(window).scrollTop() > jQuery("body").offset().top) {
+      // cuando hace scroll
+      jQuery(".menuprin.header").addClass("colormenu");
+    } else {
+      // cuando esta arriba
+      jQuery(".menuprin.header").removeClass("colormenu");
+    }
+  });
+
+  setInterval(function () {
+    jQuery(".imagenchicle.izquierda:not(.swiper-slide-zoomed) img").addClass(
+      "agitarcaja"
+    );
+    setTimeout(parar, 2500);
+  }, 5500);
+
+  setInterval(function () {
+    jQuery(".imagenchicle.derecha img").addClass("agitarcaja");
+    setTimeout(parar, 2500);
+  }, 8500);
+
+  function parar() {
+    jQuery(".imagenchicle img").removeClass("agitarcaja");
+  }
+
+  jQuery(".pregunta").on("click", function () {
+    if (jQuery(this).hasClass("abierto")) {
+      jQuery(".pregunta").removeClass("abierto");
+      jQuery(this).next().slideUp("slow");
+    } else {
+      jQuery(".respuesta").slideUp("slow");
+      jQuery(".pregunta").removeClass("abierto");
+
+      jQuery(this).addClass("abierto");
+      jQuery(this).next().slideDown("slow");
+    }
+  });
+});

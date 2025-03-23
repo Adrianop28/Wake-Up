@@ -1,0 +1,245 @@
+.banner_consentimiento {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 15px 0px;
+  display: none;
+  z-index: 100000000000;
+}
+
+.banner_consentimiento .textocookies div.h4 {
+  font-size: 22px;
+  font-weight: 400;
+  vertical-align: middle;
+  padding-bottom: 25px;
+  font-family: HelveticaNeueLTStdBdCn;
+}
+
+img.img_cookie {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  max-width: 45px;
+}
+
+.banner_consentimiento .textocookies div.h4 span {
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.banner_consentimiento.fijo_top {
+  position: fixed;
+  top: 0px;
+  padding: 30px;
+}
+
+.banner_consentimiento.fijo_bottom {
+  position: fixed;
+  bottom: 0px;
+  padding: 30px;
+}
+
+.banner_consentimiento.fijo_bottom .textocookies div.h4,
+.banner_consentimiento.fijo_top .textocookies div.h4,
+.banner_consentimiento.fijo_bottom .textocookies p,
+.banner_consentimiento.fijo_top .textocookies p {
+  text-align: center !important;
+}
+
+.banner_consentimiento.fijo_bottom .textocookies div.h4,
+.banner_consentimiento.fijo_top .textocookies div.h4 {
+  display: block !important;
+}
+
+.banner_consentimiento.flotante_top_izq {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.banner_consentimiento.flotante_top_der {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.banner_consentimiento.flotante_bottom_izq {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  max-width: 400px;
+  padding: 20px;
+  font-family: HelveticaNeueLight;
+}
+
+.banner_consentimiento.flotante_bottom_der {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  max-width: 310px;
+  padding: 20px;
+}
+
+.banner_consentimiento .textocookies {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.banner_consentimiento .textocookies p {
+  font-size: 14px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.banner_consentimiento .textocookies div.h4,
+.banner_consentimiento .textocookies p {
+  margin: 0;
+}
+
+.banner_consentimiento .textocookies p a {
+  text-decoration: underline;
+}
+
+.banner_consentimiento .textocookies a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.banner_consentimiento button {
+  background-color: #adadad;
+  color: white;
+  font-size: 13px;
+  padding: 10px 10px;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  float: left;
+  width: calc(50% - 20px);
+}
+
+.banner_consentimiento button.aceptar {
+  float: right;
+}
+
+.banner_consentimiento .configurar_cookies {
+  font-size: 14px;
+  color: white;
+  padding: 10px 0px;
+}
+
+.banner_consentimiento button.rechazar,
+.banner_consentimiento button.configurar {
+  margin-right: 10px;
+}
+
+.configurar_cookies {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100000000000;
+  display: none;
+}
+
+.configurar_cookies .cont_config {
+  max-width: 600px;
+  background-color: white;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.configurar_cookies .cont_config .cerrar_config {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 26px;
+  height: 30px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.configurar_cookies .cont_config input {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.configurar_cookies .cont_config h2 {
+  font-family: HelveticaNeueLTStdBdCn;
+}
+
+.configurar_cookies .cont_config div.h4 {
+  font-size: 14px;
+  padding-bottom: 5px;
+  font-family: HelveticaNeueLTStdBdCn;
+}
+
+.configurar_cookies .cont_config p {
+  font-size: 14px;
+}
+
+.configurar_cookies .cont_config div.h4,
+.configurar_cookies .cont_config p {
+  margin: 0;
+}
+
+.configurar_cookies .cont_config button {
+  background-color: #ccc;
+  color: white;
+  font-size: 18px;
+  padding: 10px 45px;
+  border: none;
+}
+
+.configurar_cookies .cont_config button:hover {
+  background-color: rgba(92, 184, 92, 0.8);
+}
+
+.configurar_cookies .cont_config .consent_config {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.configurar_cookies .cont_config .consent_config label {
+  cursor: pointer;
+}
+
+.configurar_cookies .cont_config .consent_config:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn_configurar {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  display: none;
+  right: 30px;
+  z-index: 100000000000;
+}
+
+.btn_configurar span {
+  font-size: 29px;
+  color: #919191;
+  display: block;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .banner_consentimiento.flotante_bottom_izq {
+    max-width: calc(100% - 40px);
+  }
+  .btn_configurar {
+    right: 15px;
+  }
+}
