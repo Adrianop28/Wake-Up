@@ -1,0 +1,156 @@
+Uri: https://chicklesgum.com/deliplus/
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\index.htm
+Content Type: text/html
+
+Uri: https://chicklesgum.com/deliplus/aviso-legal/
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\aviso-legal\index.htm
+Content Type: text/html
+
+Uri: https://chicklesgum.com/deliplus/contacto/
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\contacto\index.htm
+Content Type: text/html
+
+Uri: https://chicklesgum.com/deliplus/cumplimiento-normativo/
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\cumplimiento-normativo\index.htm
+Content Type: text/html
+
+Uri: https://chicklesgum.com/deliplus/energy/
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\energy\index.htm
+Content Type: text/html
+
+Uri: https://chicklesgum.com/deliplus/politica-de-cookies/
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\politica-de-cookies\index.htm
+Content Type: text/html
+
+Uri: https://chicklesgum.com/deliplus/politica-privacidad/
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\politica-privacidad\index.htm
+Content Type: text/html
+
+Uri: https://chicklesgum.com/deliplus/preguntas-frecuentes/
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\preguntas-frecuentes\index.htm
+Content Type: text/html
+
+Uri: https://chicklesgum.com/deliplus/pt-pt/
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\pt-pt\index.htm
+Content Type: text/html
+
+Uri: https://chicklesgum.com/deliplus/vitamina-b12/
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\vitamina-b12\index.htm
+Content Type: text/html
+
+Uri: https://chicklesgum.com/deliplus/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.3
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\plugins\contact-form-7\includes\css\styles.css
+Content Type: text/css
+
+Uri: https://chicklesgum.com/deliplus/wp-content/plugins/cookies-portfolio/css/style.css?ver=6.7.1
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\plugins\cookies-portfolio\css\style.css
+Content Type: text/css
+
+Uri: https://chicklesgum.com/deliplus/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=8.0.1
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\plugins\js_composer\assets\css\js_composer.min.css
+Content Type: text/css
+
+Uri: https://chicklesgum.com/deliplus/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/animate.css/animate.min.css?ver=8.0.1
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\plugins\js_composer\assets\lib\vendor\node_modules\animate.css\animate.min.css
+Content Type: text/css
+
+Uri: https://chicklesgum.com/deliplus/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=4.6.15
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\plugins\sitepress-multilingual-cms\res\js\cookies\language-cookie.js
+Content Type: application/javascript
+
+Uri: https://chicklesgum.com/deliplus/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.min.css?ver=1
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\plugins\sitepress-multilingual-cms\templates\language-switchers\menu-item\style.min.css
+Content Type: text/css
+
+Uri: https://chicklesgum.com/deliplus/wp-content/themes/portfolio_micro/js/scripts.js?ver=1.0.0
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\themes\portfolio_micro\js\scripts.js
+Content Type: application/javascript
+
+Uri: https://chicklesgum.com/deliplus/wp-content/themes/portfolio_micro/menu.css.php
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\themes\portfolio_micro\menu.css.php.html
+Content Type: text/html
+
+Uri: https://chicklesgum.com/deliplus/wp-content/themes/portfolio_micro/normalize.css?ver=1.0
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\themes\portfolio_micro\normalize.css
+Content Type: text/css
+
+Uri: https://chicklesgum.com/deliplus/wp-content/themes/portfolio_micro/style-page.css?ver=1.0
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\themes\portfolio_micro\style-page.css
+Content Type: text/css
+
+Uri: https://chicklesgum.com/deliplus/wp-content/themes/portfolio_micro/style.css?ver=1.0
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\themes\portfolio_micro\style.css
+Content Type: text/css
+
+Uri: https://chicklesgum.com/deliplus/wp-content/uploads/2024/01/img_12rwer6.png
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\uploads\2024\01\img_12rwer6.png
+Content Type: image/png
+
+Uri: https://chicklesgum.com/deliplus/wp-content/uploads/2024/01/img_543rwe.png
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\uploads\2024\01\img_543rwe.png
+Content Type: image/png
+
+Uri: https://chicklesgum.com/deliplus/wp-content/uploads/2024/01/img_5462y.png
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\uploads\2024\01\img_5462y.png
+Content Type: image/png
+
+Uri: https://chicklesgum.com/deliplus/wp-content/uploads/2024/01/img_546y.png
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\uploads\2024\01\img_546y.png
+Content Type: image/png
+
+Uri: https://chicklesgum.com/deliplus/wp-content/uploads/2024/03/favicon_chickesgum.jpg
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-content\uploads\2024\03\favicon_chickesgum.jpg
+Content Type: image/jpeg
+
+Uri: https://chicklesgum.com/deliplus/wp-includes/css/dashicons.min.css?ver=6.7.1
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-includes\css\dashicons.min.css
+Content Type: text/css
+
+Uri: https://chicklesgum.com/deliplus/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-includes\css\dist\block-library\style.min.css
+Content Type: text/css
+
+Uri: https://chicklesgum.com/deliplus/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-includes\js\jquery\jquery-migrate.min.js
+Content Type: application/javascript
+
+Uri: https://chicklesgum.com/deliplus/wp-includes/js/jquery/jquery.min.js?ver=3.7.1
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-includes\js\jquery\jquery.min.js
+Content Type: application/javascript
+
+Uri: https://chicklesgum.com/deliplus/wp-json/
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-json\index.htm
+Content Type: application/json
+
+Uri: https://chicklesgum.com/deliplus/wp-json/oembed/1.0/embed?url=https:%2F%2Fchicklesgum.com%2Fdeliplus%2F
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-json\oembed\1.0\embed
+Content Type: application/json
+
+Uri: https://chicklesgum.com/deliplus/wp-json/oembed/1.0/embed?url=https:%2F%2Fchicklesgum.com%2Fdeliplus%2F&format=xml
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-json\oembed\1.0\embed-1
+Content Type: text/xml
+
+Uri: https://chicklesgum.com/deliplus/wp-json/wp/v2/pages/1300
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\deliplus\wp-json\wp\v2\pages\1300
+Content Type: application/json
+
+Uri: https://dissolutiontech.com/DTresour/201008Articles/DT201008_A02.pdf
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\DTresour\201008Articles\DT201008_A02.pdf
+Content Type: application/pdf
+
+Uri: https://fonts.googleapis.com/css2?family=Montserrat&display=swap
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\css2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/icon?family=Material+Icons
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\icon
+Content Type: text/css
+
+Uri: https://unpkg.com/leaflet@1.9.2/dist/leaflet.css
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\leaflet@1.9.2\dist\leaflet.css
+Content Type: text/css
+
+Uri: https://unpkg.com/leaflet@1.9.2/dist/leaflet.js
+File Name: C:\Users\Lenovo\Documents\MARKETING\chicklesgum.com\leaflet@1.9.2\dist\leaflet.js
+Content Type: text/javascript
+
